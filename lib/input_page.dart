@@ -85,11 +85,3 @@ class ReusableCard extends StatelessWidget {
     );
   }
 }
-
-/*
-Container(
-decoration: BoxDecoration(
-color: Color(0xff1d1e33),
-borderRadius: BorderRadius.circular(10),
-)
- */
