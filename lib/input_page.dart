@@ -27,10 +27,16 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: ReusableCard(
+                  child: GestureDetector(
+                    onTap: () {
+                      print('Male card was pressed');
+                    },
+                    child: ReusableCard(
                       colour: activeCardColour,
                       cardChild: IconContent(
-                          icon: FontAwesomeIcons.mars, label: 'MALE')),
+                          icon: FontAwesomeIcons.mars, label: 'MALE'),
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: ReusableCard(
