@@ -5,6 +5,7 @@ import 'icon_content.dart';
 
 const bottomContainerHeight = 80.0;
 const activeCardColour = Color(0xff1d1e33);
+const inactiveCardColour = Color(0xff111238);
 const bottomContainerColour = Color(0xffeb1555);
 
 class InputPage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _InputPageState extends State<InputPage> {
                       print('Male card was pressed');
                     },
                     child: ReusableCard(
-                      colour: activeCardColour,
+                      colour: inactiveCardColour,
                       cardChild: IconContent(
                           icon: FontAwesomeIcons.mars, label: 'MALE'),
                     ),
@@ -40,7 +41,7 @@ class _InputPageState extends State<InputPage> {
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: activeCardColour,
+                    colour: inactiveCardColour,
                     cardChild: IconContent(
                         icon: FontAwesomeIcons.venus, label: 'FEMALE'),
                   ),
